@@ -1,0 +1,19 @@
+html, body {
+    height: 100%;
+    overflow-y: hidden;
+    background-color: #beffffed;
+}
+.cdark-bg {
+    background-color: #064e4eed;
+}
+
+span, a, .btn {
+    color: #80ffff;
+    font-weight: 500;
+}
+.btn {
+    background-color: #529a9a66;
+}
+.disabled {
+    cursor: initial;
+}

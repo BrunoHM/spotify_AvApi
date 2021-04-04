@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/icons/bootstrap-icons.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
+
+
+        <title>Spotify Web Playback SDK Quick Start Tutorial</title>
+    </head>
+    <body>
+        <script src="https://sdk.scdn.co/spotify-player.js"></script>
+
+        <div id="topContainer" class="container-fluid mt-2 cdark-bg">
+            <div class="row pb-1 pt-1 flex-nowrap justify-content-between align-items-center">
+                <div class="col-10 ml-md-auto text-center">
+                    <span >My Custom Spotify Instance</span>
+                </div>
+                
+                <div class="col-1 mb-1 mt-1 d-flex justify-content-center">
+                    <button class="disabled btn btn-dark border-info rounded-pill">
+                        Login
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        
+        <div id="contentContainer" class="container-fluid ">
+
+            <div id="rowActualSong" class="row cdark-bg justify-content-center mb-3">
+                <div>
+                    <img id="albumImage" class="img-fluid" alt="Responsive image">
+                    <span id="songName"></span>   
+                </div>
+            </div>
+
+            <div class="row controls cdark-bg">
+                
+                <div class="col-4 ml-auto text-right song">
+                    <button id="prevSong" class="btn btn-dark btnChangeTrack">
+                        <i class="bi bi-skip-backward-fill"></i>
+                    </button>
+
+                    <button id="pauseSong" class="btn btn-dark btnPlayPause">
+                        <i class="bi bi-pause-circle-fill"></i>
+                    </button>
+                    
+                    <button id="playSong" class="btn btn-dark btnPlayPause">
+                        <i class="bi bi-play-circle-fill"></i>
+                    </button>
+
+                    <button id="repeatSong" class="btn btn-dark disabled">
+                        <i class="bi bi-arrow-repeat"></i>
+                    </button>
+                    
+                    <button id="nextSong" class="btn btn-dark btnChangeTrack">
+                        <i class="bi bi-skip-forward-fill"></i>
+                    </button>
+                </div>
+
+                <div class="volume col-2 mr-auto">
+                    
+                    <button id="muteVol" class="btn btn-dark btnVolume">
+                        <i class="bi bi-volume-mute-fill"></i>
+                    </button>
+
+                    <button id="downVol" class="btn btn-dark btnVolume">
+                        <i class="bi bi-volume-down-fill"></i>
+                    </button>
+
+                    <button id="upVol" class="btn btn-dark btnVolume">
+                        <i class="bi bi-volume-up-fill"></i>
+                    </button>
+
+                    <div class="justify-content-center d-inline-flex">
+                        <div>
+                            <input type="range" class="custom-range" id="customRange11" min="0" max="100">
+                        </div>
+
+                        <span class="font-weight-bold text-primary ml-2 valueSpan2"></span>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+        </div>
+
+
+        <div id="bottomContainer" class="container-fluid fixed-bottom cdark-bg">
+            <div class="text-center">
+                <span>Developer: Bruno H. M.</span>
+            </div>
+        </div>
+
+    </body>
+</html>
